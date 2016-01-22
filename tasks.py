@@ -59,7 +59,7 @@ def consumer(depth):
 
 @app.task
 def producer(depth):
-	regionPath = '/home/edupristine/crawling/'
+	regionPath = '/home/username/crawling/'
 	incrementDepth = depth+1
 	connection = MySQLdb.Connection("localhost","username","password","database_name")
 	cur = connection.cursor()
